@@ -16,8 +16,17 @@ article {
     color:purple;
 }
 
-
 /* Put styles for questions 2.1 and 2.2 here */
+/* descendantcombinator */
+.my-descendants-are-styled p{
+    background-color:red;
+}
+
+/* child combinator */
+.my-children-are-styled>p{
+    background-color:lightgreen;
+}
+
 
 
 /* II. Box model and common properties */
