@@ -1,5 +1,21 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 20px 0px;
+    padding:20px;
+    border:1px solid black;
+}
+.style-me1{
+    color:red;
+}
+#style-me2{
+    color:blue;
+}
+/*selects all the styleme2 items with class styleme1*/
+#style-me2.style-me1{
+    color:purple;
+}
+
 
 /* Put styles for questions 2.1 and 2.2 here */
 
