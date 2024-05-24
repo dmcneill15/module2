@@ -12,6 +12,13 @@ viewport - make the websote scale nicely on all devices
     <meta name="author" content="D. Mc Neill" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module2 - Lab1</title>
+
+    <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+  </style>
+  
   </head>
 
   <body>
@@ -65,6 +72,37 @@ viewport - make the websote scale nicely on all devices
       <!--IV. HTML elements - Tables - table, thead, tbody, tr, td, th-->
       <article>
         <h2>HTML Tables</h2>
+        <table>
+          <thead>
+          <tr>
+              <th colspan="2">First header</th>
+              <th>Second header</th>
+            
+          </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>First cell - 1st row</td>
+                  <td>Second cell - 1st row</td>
+                  <td></td>
+              </tr>
+              <tr>
+                <td>First cell - 2nd row</td>
+                <td rowspan="2">Second cell - 2nd row</td>
+                <td >Third cell - 2nd row</td>
+            </tr>
+            <tr>
+              <td>First cell - 3rd row</td>
+              <td>Second cell - 3rd row</td>
+          </tr>
+          </tbody>
+      </table>
+      
+      </article>
+
+      <!--V. HTML elements - img, video, audio-->
+      <article>
+        <h2>HTML Video & Audio</h2>
         <img src="https://picsum.photos/400/400" alt="Randomly generated image" width="150px" height="150px">
         <img src="assets/html_lab_image.jpg" alt="Pink sunset over clouds" width="150px" height="150px">
         <video controls width="250px" autoplay>
