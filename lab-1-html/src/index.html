@@ -14,11 +14,12 @@ viewport - make the websote scale nicely on all devices
     <title>Module2 - Lab1</title>
 
     <style>
-      table, th, td {
-          border: 1px solid black;
+      table,
+      th,
+      td {
+        border: 1px solid black;
       }
-  </style>
-  
+    </style>
   </head>
 
   <body>
@@ -74,46 +75,102 @@ viewport - make the websote scale nicely on all devices
         <h2>HTML Tables</h2>
         <table>
           <thead>
-          <tr>
+            <tr>
               <th colspan="2">First header</th>
               <th>Second header</th>
-            
-          </tr>
+            </tr>
           </thead>
           <tbody>
-              <tr>
-                  <td>First cell - 1st row</td>
-                  <td>Second cell - 1st row</td>
-                  <td></td>
-              </tr>
-              <tr>
-                <td>First cell - 2nd row</td>
-                <td rowspan="2">Second cell - 2nd row</td>
-                <td >Third cell - 2nd row</td>
+            <tr>
+              <td>First cell - 1st row</td>
+              <td>Second cell - 1st row</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>First cell - 2nd row</td>
+              <td rowspan="2">Second cell - 2nd row</td>
+              <td>Third cell - 2nd row</td>
             </tr>
             <tr>
               <td>First cell - 3rd row</td>
               <td>Second cell - 3rd row</td>
-          </tr>
+            </tr>
           </tbody>
-      </table>
-      
+        </table>
       </article>
 
       <!--V. HTML elements - img, video, audio-->
       <article>
         <h2>HTML Video & Audio</h2>
-        <img src="https://picsum.photos/400/400" alt="Randomly generated image" width="150px" height="150px">
-        <img src="assets/html_lab_image.jpg" alt="Pink sunset over clouds" width="150px" height="150px">
+        <img
+          src="https://picsum.photos/400/400"
+          alt="Randomly generated image"
+          width="150px"
+          height="150px"
+        />
+        <img
+          src="assets/html_lab_image.jpg"
+          alt="Pink sunset over clouds"
+          width="150px"
+          height="150px"
+        />
         <video controls width="250px" autoplay>
-          <source src="assets/flower.webm" type="video/webm">
+          <source src="assets/flower.webm" type="video/webm" />
           Sorry,your browser doesn't support embedded videos.
-        </video> <!--controls tag add play pause volume | source lets you specific more than one video-->
+        </video>
+        <!--controls tag add play pause volume | source lets you specific more than one video-->
         <audio controls src="assets/t-rex-roar.mp3">
           Sorry, your browser does not support the <code>audio</code> element.
         </audio>
       </article>
 
+      <!--VI. HTML elements - Forms - form, input, label, select, option, button-->
+      <article>
+        <h2>HTML Forms</h2>
+        <form method="POST" action="http://127.0.0.1:5500/form.html">
+          <!--method is how to send the form data-->
+          <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" /><br />
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" /><br /><br />
+          </div>
+
+          <div>
+            Select a coding language (can only select one): <br />
+            <input type="radio" id="html" value="html" name="code_language" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" value="css" name="code_language" />
+            <label for="css">CSS</label><br />
+            <input type="radio" id="javascript" lue="javascript" name="code_language"/>
+            <label for="javascript">Javascript</label><br /><br />
+            <!--name attribute create a group & can only select one within the group-->
+            <!--value is what is sent to the server when form is submitted-->
+          </div>
+
+          <!--PLEASE NOTE: CREATIVE LICENSE HERE: I CONFUSED THE CONTENT OF THE NEXT TWO TASKS-->
+          <div>
+            Select the make of your vehicle (can select more than one):<br>
+            <input type="checkbox" id="toyota" value="toyota" name="vahicle_make">
+            <label for="toyota">Toyota</label><br>
+            <input type="checkbox" id="ford" value="ford" name="vahicle_make">
+            <label for="ford">Ford</label><br>
+            <input type="checkbox" id="ferrari" value="ferrari" name="vahicle_make">
+            <label for="ferrari">Ferrari</label><br><br>
+          </div>
+
+          <div>
+            <label for="vehicle_type"> Select the type of vehicle you use on a daily basis:</label><br>
+            <select name="vehicle_type" id="vehicle_type">
+              <option value="car">Car</option>
+              <option value="motorcycle">Motorcycle</option>
+              <option value="bicycle">Bicycle</option>
+            </select><br><br>
+          </div>
+
+          <button type="submit">Submit Form</button><br><br>
+        </form>
+      </article>
     </main>
 
     <footer>Copyright &copy; 2024</footer>
