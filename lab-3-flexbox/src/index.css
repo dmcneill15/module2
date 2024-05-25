@@ -41,3 +41,67 @@ a {
 }
 
 /* Add your answers here, do not modify the above CSS */
+/* Basic Flexbox */
+.flex-container{
+    display: flex;
+    flex-direction: column; /*stacks all the boxes*/
+    flex-direction: row-reverse;
+    flex-direction: row; /*default - stacks boxes horizontally*/
+}
+
+.flex-item-1{
+    flex:1;
+}
+.flex-item-2{
+    flex:2;
+}
+.flex-item-3{
+    flex:3;
+}
+.flex-item-4{
+    flex:4;
+}
+
+/* Centering */
+/* flex-center inherits flexbox property from flex-container */
+.flex-center{
+    justify-content: center;    /*center horizontal*/
+    align-items: center;    /*center vertically*/
+}
+
+/* Leftover space */
+.flex-space-between{
+    justify-content: left;
+    justify-content: right;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+/* Wrapping */
+.flex-wrap{
+    flex-wrap: wrap-reverse;
+}
+.flex-basis-item-50{
+    flex-basis:25%;
+}
+
+/* Flexbox navigation */
+.flex-menu{
+    justify-content: right;
+    text-align:center;
+}
+
+.flex-menu>li{
+    list-style-type:none;
+    padding:10px;
+    flex-grow:5;
+}
+
+.flex-menu>li>a:link{
+    color:black;
+}
+
+.flex-menu>.fourth-item{
+    order:5
+}
