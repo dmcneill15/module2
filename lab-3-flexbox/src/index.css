@@ -88,7 +88,7 @@ a {
 
 /* Flexbox navigation */
 .flex-menu{
-    justify-content: right;
+    justify-content: left;
     text-align:center;
 }
 
@@ -104,4 +104,11 @@ a {
 
 .flex-menu>.fourth-item{
     order:5
+}
+
+/*add the below to override some default browser setting that adds padding
+to the start of the navigation bar */
+ul {
+    margin: 0;
+    padding-left: 0;
 }
