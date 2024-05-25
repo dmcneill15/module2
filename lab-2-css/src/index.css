@@ -28,10 +28,33 @@ article {
 }
 
 
-
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
-
+.box{
+    background-color:lightseagreen;
+    margin: 10px 20px 30px 40px;
+    padding: 2%;
+    width: 60vw;
+    height: 25vh!important; 
+    height: 10vh!important; 
+    /* need important to override the height set in html file */
+    border: 10px solid black;
+    border: 2px dashed darkblue;
+    /* box sizing include padding & border in elements total width & height  */
+    /* border-box makes content fit inside the parent */
+    box-sizing: content-box;
+    box-sizing: border-box;
+    overflow:hidden; /*just hides overflow*/
+    overflow:scroll; /*add scroll to all boxes*/
+    overflow:visible; /*allows overflow to overflow & be visible*/
+    overflow:auto; /*adds scroll bar*/
+    outline:10px solid rgb(0, 204, 255);
+    border-radius:10%;
+    background-image: url(/lab-2-css/assets/images/img1.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
