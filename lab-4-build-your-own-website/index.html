@@ -10,29 +10,93 @@
     <meta name="author" content="D Mc Neill" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Build your own website</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .resume-flex-container {
+        display: flex;
+        background-color: bisque;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .flex-child-left {
+        background-color: #b8e0ec;
+        width: 30vw;
+        text-align: center;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .flex-child-right {
+        border: 2px solid blue;
+        width: 60vw;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .subheading {
+        background-color: aliceblue;
+        width: 20vw;
+        height: 3vh;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 50px 50px 10px;
+      }
+
+      .content {
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: 0px 0px 0px 15px;
+      }
+    </style>
+
   </head>
 
   <body>
     <div class="resume-flex-container">
       <section>
-        <div class="flex-child-left"></div>
+        <div class="flex-child-left">
+          <div class="photo">
+            <img
+              src="/lab-4-build-your-own-website/giraffe.jpg"
+              alt="Cute giraff profile picture"
+            />
+          </div>
+          <div class="contact-info">
+            Contact Info:
+            <p><span class="fa-solid fa-phone"></span> Mobile</p>
+            <p><span class="fa-regular fa-envelope"></span> Email</p>
+            <p><span class="fa fa-linkedin"></span> LinkedIn</p>
+          </div>
+        </div>
       </section>
-      
+
       <section>
         <div class="flex-child-right">
-          <div class="title">Danielle Mc Neill</div>
+          <div class="title"><h1>Danielle Mc Neill</h1></div>
           <div class="intro">
-            <h3>Introduction</h3>
-            <p>This is about me</p>
+            <h3 class="subheading">Introduction</h3>
+            <p class="content">This is about me</p>
           </div>
           <div class="experience">
-            <h3>Experience</h3>
-            <p>This is my experience</p>
+            <h3 class="subheading">Experience</h3>
+            <p class="content">This is my experience</p>
           </div>
           <div class="education">
-            <h3>Education</h3>
-            <p>This is my education</p>
+            <h3 class="subheading">Education</h3>
+            <p class="content">This is my education</p>
           </div>
         </div>
       </section>
