@@ -14,54 +14,117 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Build your own website</title>
 
     <style>
       body {
         margin: 0;
         font-family: "Ubuntu", sans-serif;
+        background-color: #f5d7bb; /*rgb(252, 241, 226);*/
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .marginTop-5{
+        margin-top: 5vh;
+      }
+
+      .justify-text{
+        text-align: justify;
+        text-justify: inter-word;
       }
 
       .resume-flex-container {
         display: flex;
-        background-color: bisque;
         justify-content: center;
-        height: 100vh;
+        gap: 20px;
+        padding:10px;
+        box-sizing: border-box;
       }
 
       .flex-child-left {
+        margin-top:24px;
+        flex: 1;
         background-color: #b8e0ec;
         width: 30vw;
+        max-width:250px;
         text-align: center;
-        height: 100vh;
         box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 
       .flex-child-right {
-        border: 2px solid blue;
         width: 60vw;
-        height: 100vh;
         box-sizing: border-box;
+        background-color:white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 
-      .subheading {
-        background-color: aliceblue;
+      .subheading-right {
+        background-color: #b8e0ec;
         width: 20vw;
-        height: 3vh;
+        height: 20px;
         padding: 5px;
         justify-content: center;
         align-items: center;
         border-radius: 10px 50px 50px 10px;
       }
 
-      .content {
-        border: 1px solid black;
-        box-sizing: border-box;
-        margin: 0px 0px 0px 15px;
+      .title{
+        margin-top:0;
+        padding: 0px;
+        font-size:20px;
       }
-    </style>
 
+      h1{
+        padding: 15px 0px 0px 15px;
+      }
+
+      .subheading-left{
+        line-height: 30px;
+      }
+
+      .content {
+        box-sizing: border-box;
+        margin: 0px 15px 0px 15px;
+      }
+
+      ul{
+        list-style-type: none;
+        margin:0;
+        padding:0; 
+      }
+
+      li {
+        margin-bottom:1em; 
+      }
+
+      .skills-list>li {
+        margin-bottom:0;
+      }
+
+      .contactInfo-list>li{
+        margin-bottom:0;
+      }
+
+      a{
+        text-decoration:none;
+        color:black;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color:black
+      }
+
+      a:hover {
+        text-decoration: underline;
+        }
+
+      
+    </style>
   </head>
 
   <body>
@@ -74,12 +137,22 @@
               alt="Cute giraff profile picture"
             />
           </div>
-          <div class="contact-info">
-            Contact Info:
-            <p><span class="fa-solid fa-phone"></span> Mobile</p>
-            <p><span class="fa-regular fa-envelope"></span> Email</p>
-            <p><span class="fa fa-linkedin"></span> LinkedIn</p>
+          <div class="subheading-left contact-info">
+            <span class=" font-bold">Contact Info:</span>
+            <ul class="list contactInfo-list">
+              <li>Mobile: +64273805341</li>
+              <li>Email: dvveijeren@gmail.com</li>
+              <li><a href="https://www.linkedin.com/in/danielle-mc-neill-nee-van-veijeren-82ba30148/" target="_blank">LinkedIn: Danielle</a></li>
+            </ul>
           </div>
+          <div class="subheading-left marginTop-5">
+            <span class="font-bold">Skill Highlights:</span>
+            <ul class="list skills-list">
+              <li>Embedded C</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
         </div>
       </section>
 
@@ -87,16 +160,61 @@
         <div class="flex-child-right">
           <div class="title"><h1>Danielle Mc Neill</h1></div>
           <div class="intro">
-            <h3 class="subheading">Introduction</h3>
-            <p class="content">This is about me</p>
-          </div>
+            <h3 class="subheading-right">Introduction</h3>
+            <div class="content justify-text">
+              <p>Danielle is a qualified Electronics Engineer and is currently working as an Applications Analyst within an engineering environment.</p> 
+              
+            <p>Danielle is responsible for the implementation and management of Projectworks, a project management software, within the Civix organisation.
+            Some of Danielle's duties include ensuring that staff are trained and supported as needed, as well as keeping up to date with the latest product developments and offerings. 
+            Along with a team, Danielle manages invoicing and reporting from within Projectworks.</p>
+
+            <p>She has proven to do well in mentorship positions, having been involved in assisting intern engineers to acclimatise to the work force as well as building staff training sessions. 
+              Capable and driven, Danielle enjoys working in a team environment and thrives on people depending on the work that she delivers.</p>
+
+              <p>Danielle is looking to contribute her existing skill base to a company requiring her calibre expertise. 
+                She is open to work that will introduce growth and challenges into her career as she aims to continues developing her technical and professional skills.</p>
+            </div>
+                
+          </div><br>
+          
           <div class="experience">
-            <h3 class="subheading">Experience</h3>
-            <p class="content">This is my experience</p>
+            <h3 class="subheading-right">Experience</h3>
+            <div class="content">
+              <ul class="experience-list">
+                <li>
+                  <span class="font-bold">Application Analyst | Civix</span> </br>
+                  May 2024 - Current
+                </li>
+                <li>
+                  <span class="font-bold">Project Manager | Siemens Healthineers</span><br>
+                  November 2022 - April 2024
+                </li>
+                <li>
+                  <span class="font-bold">Electronics Engineeer | Rheinmetall Denel Munition</span><br>
+                  January 2018 - November 2022
+                </li>
+              </ul><br>
+            </div>
           </div>
+
           <div class="education">
-            <h3 class="subheading">Education</h3>
-            <p class="content">This is my education</p>
+            <h3 class="subheading-right">Education</h3>
+            <div class="content">
+              <ul class="list education-list">
+                <li>
+                  <span class="font-bold">Software Engineering | Institute of Data</span> </br>
+                  Current
+                </li>
+                <li>
+                  <span class="font-bold">Certificate of Project Management | Google Coursera</span><br>
+                  February 2022
+                </li>
+                <li>
+                  <span class="font-bold">BEng(Electrical & Electronics) |  University of Stellenbosch</span><br>
+                  December 2017
+                </li>
+              </ul><br>
+            </div>
           </div>
         </div>
       </section>
