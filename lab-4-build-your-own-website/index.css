@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f5d7bb; /*rgb(252, 241, 226);*/
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+
+  .marginTop-5{
+    margin-top: 5vh;
+  }
+
+  .justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .resume-flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding:10px;
+    box-sizing: border-box;
+  }
+
+  .flex-child-left {
+    margin-top:24px;
+    flex: 1;
+    background-color: #b8e0ec;
+    width: 30vw;
+    max-width:250px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .flex-child-right {
+    width: 60vw;
+    box-sizing: border-box;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .subheading-right {
+    background-color: #b8e0ec;
+    width: 20vw;
+    height: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 50px 50px 10px;
+  }
+
+  .title{
+    margin-top:0;
+    padding: 0px;
+    font-size:20px;
+  }
+
+  h1{
+    padding: 15px 0px 0px 15px;
+  }
+
+  .subheading-left{
+    line-height: 30px;
+  }
+
+  .content {
+    box-sizing: border-box;
+    margin: 0px 15px 0px 15px;
+  }
+
+  ul{
+    list-style-type: none;
+    margin:0;
+    padding:0; 
+  }
+
+  li {
+    margin-bottom:1em; 
+  }
+
+  .skills-list>li {
+    margin-bottom:0;
+  }
+
+  .contactInfo-list>li{
+    margin-bottom:0;
+  }
+
+  a{
+    text-decoration:none;
+    color:black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color:black
+  }
+
+  a:hover {
+    text-decoration: underline;
+    }
