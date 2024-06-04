@@ -45,12 +45,15 @@ body {
 
 .subheading-right {
   background-color: #b8e0ec;
-  width: 20vw;
-  height: 20px;
+  display: inline;
   padding: 5px;
   justify-content: center;
   align-items: center;
   border-radius: 10px 50px 50px 10px;
+}
+
+.subheading-left {
+  line-height: 30px;
 }
 
 .title {
@@ -65,10 +68,6 @@ body {
 
 h1 {
   padding: 15px 0px 0px 15px;
-}
-
-.subheading-left {
-  line-height: 30px;
 }
 
 .content {
